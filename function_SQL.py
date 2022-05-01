@@ -3,6 +3,7 @@
 import sqlite3
 from wts import wts
 #BY Delphin Blehoussi
+# WTS = Write To Sqlite
 #installation du package https://pypi.org/project/wts/ donc le github est https://github.com/Chaton-mechant/WTS
 #tuto :
 # Ecrire dans le terminal : 
