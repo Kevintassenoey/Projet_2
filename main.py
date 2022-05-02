@@ -54,11 +54,6 @@ def calculate_max_height_graph(values):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
-
-
-@app.route('/')
-def index():
     tables = sorted(Base.classes.keys())
     return render_template("index.html",
                            tables=tables)
