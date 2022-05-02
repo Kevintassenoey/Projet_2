@@ -67,7 +67,7 @@ def show_columns():
         col: f"{table_str}{SEPARATOR}{col}" for col in
         table.__table__.columns.keys()
     }
-    return render_template('_columns.html',
+    return render_template('columns.html',
                            table_columns=sorted(table_columns.items()))
 
 
@@ -78,7 +78,7 @@ def build_graph():
     data = get_data(table, column)
     labels, values = zip(*data)
     max_height = calculate_max_height_graph(values)
-    return render_template('_graph.html',
+    return render_template('graph.html',
                            labels=labels,
                            values=values,
                            max_height=max_height)
